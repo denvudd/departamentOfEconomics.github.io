@@ -1,0 +1,25 @@
+/* Шрифты */
+@import 'blocks/fonts';
+/* Настройки интерфейса */
+@import 'blocks/interface';
+/* Настройки сетки */
+@import 'blocks/grid';
+
+
+/* Секции */
+
+/* Шапка, нав-бар */
+@import 'blocks/navbar';
+/* Бургер меню, мобильное меню */
+@import 'blocks/burgerMenu';
+/* Секция интро */
+@import 'blocks/intro';
+/* Секция формы */
+@import 'blocks/section-form';
+/* Секция с формами обучения */
+@import 'blocks/educations';
+
+/* TODO:
+  - изменить чекбокс на нормальный (с помощью label)
+  - сделать адаптивным секцию educations
+*/

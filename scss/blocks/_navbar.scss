@@ -1,0 +1,54 @@
+.header {
+  background: #EFF2F9;
+}
+
+.header__inner {
+  padding: 28px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  max-width: 100%;
+}
+
+.header__panel {
+  display: flex;
+  align-items: center;
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #003ADC;
+    padding: 17.5px 24px;
+    margin-right: 22px;
+    transition: 0.2s ease;
+    a {
+      color: #FFFFFF;
+      font-size: 20px;
+      @include Medium();
+    }
+    img {
+      margin-right: 20px;
+    }
+
+    &:hover {
+      background: #2159f3;
+      cursor: pointer;
+    }
+  }
+
+  &__phone {
+    color: #333333;
+    font-size: 20px;
+    @include SemiBold();
+  }
+}
+
+@media (max-width: 992px) {
+  .header__panel {
+    display: none;
+  }
+}
+

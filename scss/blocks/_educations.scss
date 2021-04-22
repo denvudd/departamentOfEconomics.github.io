@@ -1,0 +1,54 @@
+.educations {
+  padding-top: 130px;
+}
+
+.educations__header {
+  max-width: 540px;
+}
+
+.educations__blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 45px;
+}
+
+.educations__block {
+  max-width: 650px;
+  position: relative;
+  z-index: 11;
+  margin-bottom: 65px;
+
+  &__subtitle {
+    color: #003ADC;
+    @include Bold();
+    font-size: 32px;
+    text-transform: uppercase;
+    z-index: 10;
+  }
+
+  &__title {
+    @include Heavy();
+    font-size: 50px;
+    color: #181940;
+    z-index: 10;
+    position: relative;
+  }
+
+  &__text {
+    @include Medium();
+    font-size: 18px;
+    color: #181940;
+    z-index: 10;
+    position: relative;
+  }
+
+  &__num {
+    position: absolute;
+    content: '';
+    right: 0;
+    bottom: -3rem;
+    z-index: 9;
+  }
+  
+}

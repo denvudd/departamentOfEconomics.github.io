@@ -1,0 +1,133 @@
+.section-form {
+  position: relative;
+  margin-right: 78px;
+  margin-left: 78px;
+  padding: 78px 82px;
+  background: #FFFFFF;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+
+  &__title {
+    @include Bold();
+    font-size: 32px;
+    color: #181940;
+    line-height: 40px;
+  }
+
+  &__inputs {
+    margin-top: 27px;
+    margin-bottom: 21px;
+    display: flex;
+
+    input {
+      background: #FFFFFF;
+      border: 1px solid #000000;
+      padding: 15px 18px;
+      outline: none;
+      margin-right: 21px;
+      width: 25%;
+
+      &last-child {
+        margin-right: 0;
+      }
+    }
+
+    button {
+      background: #003ADC;
+      width: 25%;
+      text-align: center;
+      outline: none;
+      border: none;
+      font-size: 20px;
+      color: #FFFFFF;
+      line-height: 19px;
+      @include Bold();
+      text-transform: uppercase;
+      transition: 0.3s ease;
+
+      &:hover {
+        cursor: pointer;
+        background: #2058f1;
+      }
+    }
+  }
+
+  &__checkbox {
+    display: flex;
+    align-items: center;
+
+    input {
+      border: 1px solid #BDC1C9;
+      border-radius: 4px;
+      width: 16px;
+      height: 16px;
+      margin-right: 12px;
+    }
+
+    label {
+      color: #303030;
+      font-size: 12px;
+      line-height: 15px;
+      @include Regular();
+    }
+  }
+}
+
+.intro__section__form {
+  margin-top: -154px;
+}
+
+@media (max-width: 992px) {
+  .section-form__inputs {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    input {
+      margin-bottom: 21px;
+      padding: 15px 11px;
+
+      &:nth-of-type(3) {
+        margin-right: 0;
+      }
+    }
+
+    button {
+      padding: 18px 21px;
+      width: 50%;
+    }
+
+  }
+}
+
+@media (max-width: 768px) {
+  .section-form {
+    padding: 35px 35px;
+  }
+
+  .section-form__inputs {
+    input {
+      width: 100%;
+      margin: 0px auto 21px auto;
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .intro {
+    padding-bottom: 330px;
+  }
+
+  .intro__section__form {
+    margin-top: -280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-form {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}

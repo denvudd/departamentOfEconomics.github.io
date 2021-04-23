@@ -53,16 +53,6 @@
 
   &__checkbox {
     display: flex;
-    align-items: center;
-
-    input {
-      border: 1px solid #BDC1C9;
-      border-radius: 4px;
-      width: 16px;
-      height: 16px;
-      margin-right: 12px;
-    }
-
     label {
       color: #303030;
       font-size: 12px;
@@ -70,6 +60,41 @@
       @include Regular();
     }
   }
+}
+
+#checkbox {
+  display: none;
+}
+
+#checkbox+label {
+  display: block;
+  text-align: start;
+  outline: none;
+  vertical-align: middle;
+}
+
+#checkbox+label:before {
+  display: inline-block;
+  vertical-align: middle;
+  content: '';
+  font-size: 11px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #BDC1C9;
+  border-radius: 4px;
+  padding: 2px 3px;
+  margin-right: 12px;
+  line-height: 10px;
+}
+
+#checkbox:checked+label {
+  outline: none;
+}
+
+#checkbox:checked+label:before {
+  content: '✔';
+  color: #181940;
+  outline: none;
 }
 
 .intro__section__form {

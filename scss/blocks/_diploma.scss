@@ -1,0 +1,169 @@
+.diploma {
+  background: #EFF2F9;
+  position: relative;
+}
+
+.diploma__inner {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.diploma__col {
+  max-width: 50%;
+  margin-right: 50px;
+  z-index: 15;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.diploma__header {
+  margin-bottom: 60px;
+}
+
+.diploma__text {
+  color: #181940;
+
+  &__title {
+    @include Bold();
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  &__description {
+    @include Medium();
+    font-size: 24px;
+  }
+}
+
+.diploma__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+
+  &__item {
+    margin-right: 53px;
+    margin-bottom: 100px;
+    position: relative;
+
+    &::before {
+      width: 130%;
+      height: 110%;
+      position: absolute;
+      content: '';
+      top: 65%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #FFFFFF;
+    }
+  }
+
+  &__photo {
+    position: relative;
+    max-width: 120px;
+    max-height: 170px;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__icon {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.diploma__frame {
+  position: absolute;
+  content: '';
+  right: 0;
+  top: -15rem;
+  z-index: 10;
+}
+
+@media (max-width: 1200px) {
+  .diploma__col {
+    margin-right: 110px;
+  }
+}
+
+@media (max-width: 992px) {
+  .diploma__inner {
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .diploma__col {
+    margin-right: 0;
+    margin-bottom: 50px;
+    max-width: 100%;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .diploma__header {
+    margin-bottom: 40px;
+  }
+
+  .diploma__text__title {
+    margin-bottom: 15px;
+    font-size: 28px;
+  }
+
+  .diploma__text__description {
+    font-size: 18px;
+  }
+  .diploma__frame {
+    right: -5rem;
+    img {
+      max-width: 75%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .diploma__frame {
+    right: -8rem;
+    top: -13rem;
+    img {
+      max-width: 65%;
+    }
+  }
+
+  .diploma__gallery {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .diploma__text__title {
+    font-size: 23px;
+    margin-bottom: 8px;
+  }
+
+  .diploma__text__description {
+    font-size: 16px;
+  }
+
+  .diploma__frame {
+    right: -14rem;
+    top: -10rem;
+    img {
+      max-width: 45%;
+    }
+  }
+
+  .diploma__header {
+    margin-bottom: 20px;
+  }
+
+  .diploma__gallery__item {
+    margin-left: 26px;
+    margin-right: 26px;
+  }
+}

@@ -7,7 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Факультет экономики</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/lightbox.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/lightbox.min.js"></script>
+  <script>
+    lightbox.option({
+      'disableScrolling': true,
+      'albumLabel': "Диплом %1 из %2",
+      'fadeDuration': 300,
+      'imageFadeDuration': 300,
+      'wrapAround': true,
+    })
+  </script>
 </head>
 
 <body>
@@ -88,8 +99,8 @@
               </div>
             </div>
           </div>
-          <div class="intro__frame">
-            <img src="img/svg/intro-house.svg" alt="">
+          <div id="scene" class="intro__frame">
+            <img data-depth="0.3" src="img/svg/intro-house.svg" alt="">
           </div>
         </div>
       </div>
@@ -106,8 +117,9 @@
           <button type="submit">Отправить</button>
         </div>
         <div class="section-form__checkbox">
-          <input type="checkbox" name="intro__checkbox" class="form__checkbox">
-          <label for="intro__checkbox">Я даю согласие на обработку персональных данных, согласен на получение
+          <input type="checkbox" name="intro__checkbox" id="checkbox" class="form__checkbox">
+          <label for="checkbox" class="checkbox__text">Я даю согласие на обработку персональных данных, согласен на
+            получение
             информационных рассылок от Университета «Синергия» и соглашаюсь c <a href="#"
               style="text-decoration: underline;">политикой конфиденциальности</a></label>
         </div>
@@ -177,15 +189,338 @@
               <h3>Очная/Заочная</h3>
             </div>
             <div class="educations__block__text">
-              <p>Заключительный этап высшего образования , обучаясь на котором Вы 
+              <p>Заключительный этап высшего образования , обучаясь на котором Вы
                 углубитесь в изучение финансового риск-менеджмента и выберете дальнейшую
-                 образовательную траекторию в соответствии со своими научными и карьерными 
-                 интересами.</p>
+                образовательную траекторию в соответствии со своими научными и карьерными
+                интересами.</p>
             </div>
             <div class="educations__block__num">
               <img src="img/educations/block_num4.png" alt="">
             </div>
           </div>
+        </div>
+        <div class="educations__button__inner">
+          <a href="#" class="section-button educations__button">Скачать учебный план</a>
+        </div>
+        <div id="scene" class="educations__frame">
+          <img data-depth="0.3" src="img/svg/educations-dollars.svg" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="section advantages">
+      <div class="container">
+        <div class="section__header advantages__header">
+          <div class="section__title">
+            <h2>Преимущества <span class="brownWord">Факультета Экономики</span></h2>
+          </div>
+        </div>
+        <div class="advantages__blocks">
+          <div class="advantages__block">
+            <div class="advantages__block__img">
+              <img src="img/advantages/block1.png" alt="">
+            </div>
+            <div class="advantages__block__text">
+              <p>Преподаватели из топовых банков России</p>
+            </div>
+          </div>
+          <div class="advantages__block">
+            <div class="advantages__block__img">
+              <img src="img/advantages/block2.png" alt="">
+            </div>
+            <div class="advantages__block__text">
+              <p>Практика в консалтинговых компаниях, органах государственной
+                власти со 2 курса</p>
+            </div>
+          </div>
+          <div class="advantages__block">
+            <div class="advantages__block__img">
+              <img src="img/advantages/block3.png" alt="">
+            </div>
+            <div class="advantages__block__text">
+              <p>Стажировки и практики в крупнейших финансовых холдингах страны</p>
+            </div>
+          </div>
+          <div class="advantages__block">
+            <div class="advantages__block__img">
+              <img src="img/advantages/block4.png" alt="">
+            </div>
+            <div class="advantages__block__text">
+              <p>Участие в днях карьеры с топ-менеджерами из банков-партнёров </p>
+            </div>
+          </div>
+          <div class="advantages__block">
+            <div class="advantages__block__img">
+              <img src="img/advantages/block5.png" alt="">
+            </div>
+            <div class="advantages__block__text">
+              <p>Учебные планы ориентированы на современные тенденции рынка труда</p>
+            </div>
+          </div>
+        </div>
+        <div id="scene" class="advantages__frame">
+          <img data-depth="0.3" src="img/svg/advantages-diagram.svg" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="section work">
+      <div class="container">
+        <div class="section__header work__header">
+          <div class="section__title">
+            <h2>Кем вы можете <span class="brownWord">работать</span></h2>
+          </div>
+        </div>
+        <div class="work__blocks">
+          <div class="work__block">
+            <div class="work__block__title">
+              <p>КОЛЛЕДЖ</p>
+            </div>
+            <div class="work__block__positions">
+              <div class="work__block__position">
+                <div class="work__block__position__name">
+                  <p>Помощник Бухгалтера</p>
+                </div>
+                <div class="work__block__position__payday">
+                  <p>30 000 - 35 000 руб</p>
+                </div>
+              </div>
+              <div class="work__block__position">
+                <div class="work__block__position__name">
+                  <p>Специалист
+                    по документооборту</p>
+                </div>
+                <div class="work__block__position__payday">
+                  <p>40 000 руб</p>
+                </div>
+              </div>
+              <div class="work__block__position">
+                <div class="work__block__position__name">
+                  <p>Бухгалтер
+                    на первичную
+                    документацию</p>
+                </div>
+                <div class="work__block__position__payday">
+                  <p>45 000 руб</p>
+                </div>
+              </div>
+              <div class="work__block__position">
+                <div class="work__block__position__name">
+                  <p>Младший бухгалтер</p>
+                </div>
+                <div class="work__block__position__payday">
+                  <p>50 000 руб</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="work__block">
+            <div class="work__block__title">
+              <p>БАКАЛАВРИАТ</p>
+            </div>
+            <div class="work__block__positions">
+              <div class="work__block__position">
+                <div class="work__block__position__name">
+                  <p>Экономист-аналитик</p>
+                </div>
+                <div class="work__block__position__payday">
+                  <p>80 000 руб</p>
+                </div>
+              </div>
+              <div class="work__block__position">
+                <div class="work__block__position__name">
+                  <p>Специалист по исследованиям рынка</p>
+                </div>
+                <div class="work__block__position__payday">
+                  <p>100 000 руб</p>
+                </div>
+              </div>
+              <div class="work__block__position">
+                <div class="work__block__position__name">
+                  <p>Руководитель планово
+                    -экономического отдела</p>
+                </div>
+                <div class="work__block__position__payday">
+                  <p>150 000 - 200 000 руб</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="work__block">
+            <div class="work__block__title">
+              <p>МАГИСТРАТУРА</p>
+            </div>
+            <div class="work__block__positions">
+              <div class="work__block__position">
+                <div class="work__block__position__name">
+                  <p>IT-аудит</p>
+                </div>
+                <div class="work__block__position__payday">
+                  <p>130 000 руб</p>
+                </div>
+              </div>
+              <div class="work__block__position">
+                <div class="work__block__position__name">
+                  <p>Цифровой финансист</p>
+                </div>
+                <div class="work__block__position__payday">
+                  <p>40 000 руб</p>
+                </div>
+              </div>
+              <div class="work__block__position">
+                <div class="work__block__position__name">
+                  <p>Цифровой аналитик</p>
+                </div>
+                <div class="work__block__position__payday">
+                  <p>150 000 руб</p>
+                </div>
+              </div>
+              <div class="work__block__position">
+                <div class="work__block__position__name">
+                  <p>Финансовый директор</p>
+                </div>
+                <div class="work__block__position__payday">
+                  <p>300 000 рублей</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="work__block">
+            <div class="work__block__title">
+              <p>АСПИРАНТУРА</p>
+            </div>
+            <div class="work__block__positions">
+              <div class="work__block__position">
+                <div class="work__block__position__name">
+                  <p>Доцент кафедры</p>
+                </div>
+                <div class="work__block__position__payday">
+                  <p>80 000 руб</p>
+                </div>
+              </div>
+              <div class="work__block__position">
+                <div class="work__block__position__name">
+                  <p>Преподаватель экономических наук
+                    в вузе</p>
+                </div>
+                <div class="work__block__position__payday">
+                  <p>100 000 - 150 000 руб</p>
+                </div>
+              </div>
+              <div class="work__block__position">
+                <div class="work__block__position__name">
+                  <p>Руководитель кафедры</p>
+                </div>
+                <div class="work__block__position__payday">
+                  <p>155 000 руб</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section diploma">
+      <div class="container">
+        <div class="diploma__inner">
+          <div class="diploma__col">
+            <div class="section__header diploma__header">
+              <div class="section__title">
+                <h2>2 диплома по <span class="brownWord">окончанию обучения</span> </h2>
+              </div>
+            </div>
+            <div class="diploma__text">
+              <div class="diploma__text__title">
+                <p>Государственная лицензия и аккредитация</p>
+              </div>
+              <div class="diploma__text__description">
+                <p>Программы высшего профессионального образования и магистратуры факультета
+                  экономики соответствуют европейским стандартам закреплённым Болонской декларацией. </p>
+              </div>
+            </div>
+          </div>
+          <div class="diploma__col">
+            <div class="diploma__gallery">
+              <a class="diploma__gallery__item" href="img/diploma/diploma1.png" data-lightbox="image"
+                data-title="Диплом 1">
+                <img class="diploma__gallery__photo" src="img/diploma/diploma1.png" alt="">
+                <img class="diploma__gallery__icon" src="img/svg/zoom-icon.svg" alt="">
+              </a>
+              <a class="diploma__gallery__item" href="img/diploma/diploma2.png" data-lightbox="image"
+                data-title="Диплом 2">
+                <img class="diploma__gallery__photo" src="img/diploma/diploma2.png" alt="">
+                <img class="diploma__gallery__icon" src="img/svg/zoom-icon.svg" alt="">
+              </a>
+              <a class="diploma__gallery__item" href="img/diploma/diploma3.png" data-lightbox="image"
+                data-title="Диплом 3">
+                <img class="diploma__gallery__photo" src="img/diploma/diploma3.png" alt="">
+                <img class="diploma__gallery__icon" src="img/svg/zoom-icon.svg" alt="">
+              </a>
+              <a class="diploma__gallery__item" href="img/diploma/diploma4.png" data-lightbox="image"
+                data-title="Диплом 4">
+                <img class="diploma__gallery__photo" src="img/diploma/diploma4.png" alt="">
+                <img class="diploma__gallery__icon" src="img/svg/zoom-icon.svg" alt="">
+              </a>
+              <a class="diploma__gallery__item" href="img/diploma/diploma5.png" data-lightbox="image"
+                data-title="Диплом 5">
+                <img class="diploma__gallery__photo" src="img/diploma/diploma5.png" alt="">
+                <img class="diploma__gallery__icon" src="img/svg/zoom-icon.svg" alt="">
+              </a>
+              <a class="diploma__gallery__item" href="img/diploma/diploma6.png" data-lightbox="image"
+                data-title="Диплом 6">
+                <img class="diploma__gallery__photo" src="img/diploma/diploma6.png" alt="">
+                <img class="diploma__gallery__icon" src="img/svg/zoom-icon.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="scene" class="diploma__frame">
+          <img data-depth="0.3" src="img/svg/diploma-mounts.svg" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="section spheres">
+      <div class="container">
+        <div class="section__header spheres__header">
+          <div class="section__title">
+            <h2>Сферы, где задействованы <span class="brownWord">наши выпускники</span></h2>
+          </div>
+        </div>
+        <div class="advantages__blocks">
+          <div class="advantages__block">
+            <div class="advantages__block__img">
+              <img src="img/advantages/block1.png" alt="">
+            </div>
+            <div class="advantages__block__text">
+              <p>Международная научно-исследовательская деятельность </p>
+            </div>
+          </div>
+          <div class="advantages__block">
+            <div class="advantages__block__img">
+              <img src="img/advantages/block2.png" alt="">
+            </div>
+            <div class="advantages__block__text">
+              <p>Государственное экономическое управление
+              </p>
+            </div>
+          </div>
+          <div class="advantages__block">
+            <div class="advantages__block__img">
+              <img src="img/advantages/block3.png" alt="">
+            </div>
+            <div class="advantages__block__text">
+              <p>Цифровая экономика</p>
+            </div>
+          </div>
+          <div class="advantages__block">
+            <div class="advantages__block__img">
+              <img src="img/advantages/block4.png" alt="">
+            </div>
+            <div class="advantages__block__text">
+              <p>Аналитика данных</p>
+            </div>
+          </div>
+        </div>
+        <div class="spheres__button__inner">
+          <a href="#" class="section-button spheres__button">Подобрать программу обучения</a>
         </div>
       </div>
     </section>
@@ -193,5 +528,18 @@
   <footer></footer>
 </body>
 <script src="js/mobileMenu.js"></script>
+<script src="js/parallax.min.js"></script>
+<script>
+  var scenes = [];
+  var scenesSelector = document.querySelectorAll('#scene');
+
+  for (i = 0; i < scenesSelector.length; i++) {
+    scenes[i] = new Parallax(scenesSelector[i], {
+      pointerEvents: false,
+    });
+  }
+
+   
+</script>
 
 </html>

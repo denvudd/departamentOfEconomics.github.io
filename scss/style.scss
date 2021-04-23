@@ -18,8 +18,12 @@
 @import 'blocks/section-form';
 /* Секция с формами обучения */
 @import 'blocks/educations';
+/* Секция преимущества */
+@import 'blocks/advantages';
+/* Секция "Кем вы можете работать", work */
+@import 'blocks/work';
+/* Секция с дипломами */
+@import 'blocks/diploma';
+/* Секция "Сферы где зайдествованы наши выпускники", spheres */
+@import 'blocks/spheres';
 
-/* TODO:
-  - изменить чекбокс на нормальный (с помощью label)
-  - сделать адаптивным секцию educations
-*/

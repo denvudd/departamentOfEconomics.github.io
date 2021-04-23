@@ -1,0 +1,23 @@
+.spheres__header {
+  text-align: center;
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.spheres__button__inner {
+  margin-top: 76px;
+  display: flex;
+  justify-content: center;
+}
+
+.spheres__button {
+  padding: 18px 44px;
+}
+
+@media (max-width: 768px) {
+  .spheres__header {
+    max-width: 100%;
+    width: 100%;
+  }
+}

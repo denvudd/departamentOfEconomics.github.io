@@ -70,7 +70,6 @@
   display: block;
   text-align: start;
   outline: none;
-  vertical-align: middle;
 }
 
 #checkbox+label:before {
@@ -95,10 +94,6 @@
   content: '✔';
   color: #181940;
   outline: none;
-}
-
-.intro__section__form {
-  margin-top: -154px;
 }
 
 @media (max-width: 992px) {

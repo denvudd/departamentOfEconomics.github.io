@@ -16,7 +16,7 @@ function burgerMenu(selector) {
     if (menu.hasClass('burger-menu__active')) {
       $('body').css('overflow-y', 'hidden');
     } else {
-      $('body').css('overflow', 'visible');
+      $('body').css('overflow-y', 'visible');
     }
   }
 }
